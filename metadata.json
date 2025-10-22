@@ -1,0 +1,5 @@
+{
+  "name": "NexVer",
+  "description": "Accelerate Hardware Verification. Globally. An advanced hardware verification platform to automate VP generation, testbench creation, and coverage analysis for SystemVerilog, Verilog, & VHDL.",
+  "requestFramePermissions": []
+}
