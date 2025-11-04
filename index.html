@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexVer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': {
+                            '50': '#E8E9F3',
+                            '100': '#C4C7E2',
+                            '200': '#A1A5D1',
+                            '300': '#7D83C0',
+                            '400': '#5A61AF',
+                            '500': '#363F9E',
+                            '600': '#2B327E',
+                            '700': '#20265F',
+                            '800': '#1A1D4A',
+                            '900': '#14173B',
+                            '950': '#0C0D23'
+                        },
+                        'secondary': {
+                            '50': '#F7F7FD',
+                            '100': '#EFEEFB',
+                            '200': '#E4E2F8',
+                            '300': '#D8DAF7',
+                            '400': '#CBCDF5',
+                            '500': '#B6BAF1',
+                            '600': '#989DE7',
+                            '700': '#767CCD',
+                            '800': '#5B61B1',
+                            '900': '#4A4E8F',
+                            '950': '#2C2E55'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true, theme: 'dark', themeVariables: {
+          'primaryColor': '#2B327E',
+          'primaryTextColor': '#FFFFFF',
+          'lineColor': '#B6BAF1',
+          'textColor': '#E4E2F8',
+          'mainBkg': '#1A1D4A',
+          'clusterBkg': '#14173B'
+      }});
+    </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
+    "typescript": "https://aistudiocdn.com/typescript@^5.9.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-secondary-100 dark:bg-primary-950 text-primary-800 dark:text-secondary-200">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
